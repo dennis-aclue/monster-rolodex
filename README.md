@@ -20,17 +20,13 @@ $> cdk init app --language=typescript
 
 You need these packages for aws s3 bucket deploy process
 
-$> npm install @aws-cdk/core
-$> npm install aws-s3
-$> npm install @aws-cdk/aws-s3-deployment
-$> npm install @aws-cdk/aws-route53
-$> npm install @aws-cdk/aws-certificatemanager
-
-
-$> npm install -g  aws-cdk
-$> npm install aws-cdk-lib
-
-$> npm install constructs
+*** $> npm install @aws-cdk/core ***
+*** $> npm install aws-s3 ***
+*** $> npm install @aws-cdk/aws-s3-deployment ***
+*** $> npm install @aws-cdk/aws-route53 ***
+*** $> npm install @aws-cdk/aws-certificatemanager ***
+*** $> npm install @aws-cdk/aws-cloudfront ***
+*** $> npm install @aws-cdk/aws-route53-targets ***
 
 Before every deployment, check if a newer version of aws-cdk package is available!
 $> npm update
@@ -42,6 +38,3 @@ Recap of manual steps:
 4. Certified manager
 5. AWS Cloud Front
 6. Route53 (DNS)
-
-
-
