@@ -31,9 +31,22 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "tsc",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
