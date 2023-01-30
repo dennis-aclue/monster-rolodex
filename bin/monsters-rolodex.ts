@@ -16,7 +16,7 @@ new MonstersRolodexStack(app, 'MonstersRolodexStack', {
 
   /* Uncomment the next line if you know exactly what Account and Region you
    * want to deploy the stack to. */
-  env: { account: '863129553779', region: 'eu-central-1' },
+  env: { account: '464453131016', region: 'eu-central-1' },
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });

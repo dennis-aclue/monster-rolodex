@@ -1,20 +1,6 @@
 # Deployment to AWS S3 bucket with CDK #
 
 AWS Account need the IAM user role. It can be done inside the AWS user account configuration.
-You can set up the user role under Security Credentials, IAM users, Users, Add user >
-Add user name (s3bucket), enable console access (manage the password like you think), and click Next: Permissions >
-Attach policies directly (e.g. AmazonS3FullAccess [better to use the least privilege principle, and create a new role with the least privileges, only access to a specific s3 bucket]), and click Next: Tags >
-Add tags, and click Next: Review >
-Create user.
-
-Afterwards copy the user credentials, and save them in a safe place. You will need them later.
-Now update the ~/.aws/credentials file, inside your home directory. 
-Copy the user credentials to the file, and save it. For example:
->[s3bucket]  
-> region = eu-central-1  
-> role_arn= 'copy the role arn from the user details''  
-> source_profile='source profile name'
-
 Download and install CLI on your machine (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-version.html)
 https://awscli.amazonaws.com/AWSCLIV2-version.number.msi
 
@@ -52,7 +38,7 @@ Before every deployment, check if a newer version of aws-cdk package is availabl
 
 If you have problems with the s3 bucket deployment and your user profile. You can add a new profile to your ~/.aws/credentials file, inside your home directory.
 You need AWS CLI installed on your machine. Then you can add a new profile with command
-$> aws configure --profile 'profile name'
+``` aws configure --profile 'profile name' ```
 and insert the values from your AWS account.
 Afterwards you can use the profile name in the cdk.json file, to deploy the s3 bucket.
 
